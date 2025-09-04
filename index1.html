@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiLink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fcf8;
+        }
+        .section {
+            scroll-margin-top: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md p-4 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="./INFI LINK (1).png" alt="InfiLink Logo" class="h-16 rounded-full">
+                <span class="text-xl font-bold text-gray-800">InfiLink</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Services</a>
+                <a href="#projects" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600 transition duration-300 font-medium">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-gray-600 hover:text-green-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 text-center">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-green-600 transition duration-300 font-medium">Home</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-green-600 transition duration-300 font-medium">About Us</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-green-600 transition duration-300 font-medium">Services</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-green-600 transition duration-300 font-medium">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-green-600 transition duration-300 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="section h-screen flex items-center justify-center bg-violet-400 text-white text-center rounded-b-2xl shadow-xl p-8">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">Boundless Connectivity and EndLess Possibilities</h1>
+            <p class="text-lg md:text-xl font-light mb-8">To Monitor Animals Health,Location and Behaviour.</p>
+            <a href="#projects" class="bg-white text-yellow-600 py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 font-bold">Our Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="section py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-yellow-800 mb-6">About InfiLink</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">
+              We are a dedicated team focused on revolutionzing livestock management through innovative IoT solutions.Our mission is to monitor animal actions and health. Using cutting-edge technology to ensure better care and management of livestock.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="w-full md:w-1/3 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Ayesha</h3>
+                    <p class="text-gray-600">Team Leader and Handling Mails</p>
+                </div>
+                <div class="w-full md:w-1/3 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Anitha</h3>
+                    <p class="text-gray-600">Handles PPT Information.</p>
+                </div>
+                <div class="w-full md:w-1/3 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Triveni</h3>
+                    <p class="text-gray-600">Handles Questions and answers,Providing technical Support.</p>
+                </div>
+                <div class="w-full md:w-1/3 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Gayathri</h3>
+                    <p class="text-gray-600">Handles Emails with clients.</p>
+                </div>
+                <div class="w-full md:w-1/3 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Sabiha</h3>
+                    <p class="text-gray-600">Handles PPT Information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section py-20 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-yellow-800 mb-6">Our Services</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">
+                We offer a wide range of services designed to help businesses and communities become more efficient and integrated.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-center items-center mb-4">
+                        <svg class="w-16 h-16 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14m-12 0h-4a2 2 0 01-2-2V9m8 10h4a2 2 0 002-2V9m-8 10V6a2 2 0 012-2h4a2 2 0 012 2v4m-8-4h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-violet-800 mb-2">Real-time Monitoring</h3>
+                    <p class="text-gray-600">Advanced IoT sensors track livestock behaviour and location in real-time.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-center items-center mb-4">
+                        <svg class="w-16 h-16 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-violet-800 mb-2">Health Tracking</h3>
+                    <p class="text-gray-600">Monitor vital signs and detect early signs of illness or distress.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex justify-center items-center mb-4">
+                        <svg class="w-16 h-16 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-violet-800 mb-2">Smart Alerts</h3>
+                    <p class="text-gray-600">Instant notifications for unusual behaviour or health concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <section id="projects" class="section py-20 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-yellow-800 mb-12 text-center">Our Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="./7.jpg" alt="Smart Building Automation Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 mb-2">Livestock Location Tracking System</h3>
+                        <p class="text-gray-600 text-sm">GPS-enabled tracking collars that monitor the location and movement of livestock in real-time,helping farmers keep track of their animals and prevent theft or loss.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="./6.jpg" alt="AI-Powered Supply Chain Optimization" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 mb-2">Smart Cattle Health Monitor</h3>
+                        <p class="text-gray-600 text-sm">An IoT-based system that continuously monitors cattle health through wearables sensors,tracking vital signs,body temperature, and Movement patterns to detect early signs of illness.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="./8.jpg" alt="Cloud-Based Network Management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-violet-600 mb-2">Behaviour Analysis Camera System</h3>
+                        <p class="text-gray-600 text-sm">AI-powered camera system that analyzes livestock behaviour patterns to detect stress,illness,or unusual activities through computer vision and machine.</p>
+                    </div>
+                </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-yellow-800 mb-6">Get In Touch</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-8">
+                Ready to start a project or have a question? We'd love to hear from you. Fill out the form below or reach out to us directly.
+            </p>
+            <div class="max-w-xl mx-auto p-8 bg-gray-50 rounded-lg shadow-md">
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <input type="text" id="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-violet-600 text-white py-3 rounded-md font-bold hover:bg-green-700 transition duration-300">Send Message</button>
+                </form>
+                <div id="form-message" class="mt-4 text-center hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2024 InfiLink. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('nav a');
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            // Toggle mobile menu
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Handle smooth scrolling and mobile menu closing
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                            if (!mobileMenu.classList.contains('hidden')) {
+                                mobileMenu.classList.add('hidden');
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Handle form submission
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // In a real application, you would send this data to a server
+                // For this example, we'll just show a success message
+                formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add('text-green-600');
+                contactForm.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
